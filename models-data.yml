@@ -587,7 +587,7 @@ models:
 
     '
   releaseDate: 2025-01
-  contextWindow: 64000
+  contextWindow: 163840
   maxOutput: 32768
   knowledgeCutoff: 2024-07
   inputPricePer1M: 0.7
@@ -726,8 +726,8 @@ models:
   contextWindow: 202752
   maxOutput: 65536
   knowledgeCutoff: 2025-06
-  inputPricePer1M: 1.05
-  outputPricePer1M: 3.5
+  inputPricePer1M: 0.98
+  outputPricePer1M: 3.08
   consumerPlanName: null
   consumerPlanPricePerMonth: null
   openSource: false
