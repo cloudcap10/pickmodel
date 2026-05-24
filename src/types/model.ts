@@ -39,6 +39,11 @@ export interface AIModel {
     humaneval: number | null;
     math: number | null;
     gpqa: number | null;
+    sweBench: number | null;
+    gsm8k: number | null;
+    aime: number | null;
+    liveCodeBench: number | null;
+    hellaswag: number | null;
   } | null;
 }
 

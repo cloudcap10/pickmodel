@@ -40,10 +40,15 @@ models:
   - agentic
   tier: frontier
   benchmarks:
-    mmlu: null
+    mmlu: 89.8
     humaneval: null
-    math: null
-    gpqa: null
+    math: 94.1
+    gpqa: 94.2
+    sweBench: 87.6
+    gsm8k: 98.4
+    aime: 100.0
+    liveCodeBench: null
+    hellaswag: null
 - id: claude-sonnet-4-6
   name: Claude Sonnet 4.6
   provider: Anthropic
@@ -84,10 +89,15 @@ models:
   - everyday
   tier: standard
   benchmarks:
-    mmlu: null
-    humaneval: null
-    math: null
-    gpqa: null
+    mmlu: 89.5
+    humaneval: 90.8
+    math: 86.4
+    gpqa: 68.3
+    sweBench: 55.3
+    gsm8k: 95.6
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: claude-haiku-4-5
   name: Claude Haiku 4.5
   provider: Anthropic
@@ -128,10 +138,15 @@ models:
   - cost-effective
   tier: lite
   benchmarks:
-    mmlu: null
+    mmlu: 80.1
     humaneval: null
     math: null
     gpqa: null
+    sweBench: null
+    gsm8k: null
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: gpt-4o
   name: GPT-4o
   provider: OpenAI
@@ -173,9 +188,14 @@ models:
   tier: frontier
   benchmarks:
     mmlu: 88.7
-    humaneval: 90.2
+    humaneval: 87.1
     math: 76.6
     gpqa: 53.6
+    sweBench: 38.4
+    gsm8k: 95.3
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: gpt-4o-mini
   name: GPT-4o mini
   provider: OpenAI
@@ -217,9 +237,14 @@ models:
   tier: lite
   benchmarks:
     mmlu: 82.0
-    humaneval: 87.2
+    humaneval: 87.0
     math: 70.2
     gpqa: 40.9
+    sweBench: null
+    gsm8k: 93.2
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: o3
   name: o3
   provider: OpenAI
@@ -261,10 +286,15 @@ models:
   - coding
   tier: frontier
   benchmarks:
-    mmlu: 96.7
-    humaneval: 99.1
-    math: 99.3
+    mmlu: 91.4
+    humaneval: 92.8
+    math: 96.7
     gpqa: 87.7
+    sweBench: 69.1
+    gsm8k: 97.2
+    aime: 96.7
+    liveCodeBench: null
+    hellaswag: null
 - id: o4-mini
   name: o4-mini
   provider: OpenAI
@@ -305,10 +335,15 @@ models:
   - math
   tier: standard
   benchmarks:
-    mmlu: 93.3
-    humaneval: 95.2
-    math: 97.0
+    mmlu: 89.5
+    humaneval: 90.1
+    math: 93.4
     gpqa: 79.7
+    sweBench: null
+    gsm8k: 96.5
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: gemini-3-1-pro
   name: Gemini 3.1 Pro
   provider: Google
@@ -351,10 +386,15 @@ models:
   - agentic
   tier: frontier
   benchmarks:
-    mmlu: null
-    humaneval: null
-    math: null
-    gpqa: null
+    mmlu: 90.3
+    humaneval: 88.4
+    math: 88.7
+    gpqa: 94.3
+    sweBench: 80.6
+    gsm8k: 96.4
+    aime: null
+    liveCodeBench: 91.7
+    hellaswag: null
 - id: gemini-2-5-flash
   name: Gemini 2.5 Flash
   provider: Google
@@ -396,10 +436,15 @@ models:
   - long-context
   tier: standard
   benchmarks:
-    mmlu: null
-    humaneval: null
-    math: null
+    mmlu: 85.8
+    humaneval: 83.2
+    math: 74.1
     gpqa: null
+    sweBench: null
+    gsm8k: 93.8
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: llama-3-3-70b
   name: Llama 3.3 70B
   provider: Meta
@@ -441,9 +486,14 @@ models:
   tier: standard
   benchmarks:
     mmlu: 86.0
-    humaneval: 88.4
-    math: 77.0
+    humaneval: 78.9
+    math: 73.5
     gpqa: 50.5
+    sweBench: null
+    gsm8k: 93.7
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: llama-4-maverick
   name: Llama 4 Maverick
   provider: Meta
@@ -485,10 +535,15 @@ models:
   - moe
   tier: frontier
   benchmarks:
-    mmlu: 89.2
+    mmlu: 88.2
     humaneval: null
-    math: 88.0
-    gpqa: 69.8
+    math: 79.1
+    gpqa: 58.3
+    sweBench: 32.1
+    gsm8k: null
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: mistral-large-2
   name: Mistral Large 2
   provider: Mistral AI
@@ -530,9 +585,14 @@ models:
   tier: standard
   benchmarks:
     mmlu: 84.0
-    humaneval: 92.0
-    math: 73.0
+    humaneval: 82.0
+    math: 71.2
     gpqa: null
+    sweBench: null
+    gsm8k: 92.0
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: deepseek-v3
   name: DeepSeek V3
   provider: DeepSeek
@@ -574,9 +634,14 @@ models:
   tier: frontier
   benchmarks:
     mmlu: 88.5
-    humaneval: 89.0
-    math: 90.2
+    humaneval: 82.6
+    math: 75.9
     gpqa: 59.1
+    sweBench: null
+    gsm8k: 92.8
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: deepseek-r1
   name: DeepSeek R1
   provider: DeepSeek
@@ -618,9 +683,14 @@ models:
   tier: frontier
   benchmarks:
     mmlu: 90.8
-    humaneval: 92.0
-    math: 97.3
+    humaneval: 85.7
+    math: 83.5
     gpqa: 71.5
+    sweBench: 49.2
+    gsm8k: 97.3
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: grok-3
   name: Grok 3
   provider: xAI
@@ -662,10 +732,15 @@ models:
   - science
   tier: frontier
   benchmarks:
-    mmlu: 93.3
+    mmlu: 85.7
     humaneval: null
-    math: 93.3
-    gpqa: 84.6
+    math: 76.0
+    gpqa: 56.7
+    sweBench: null
+    gsm8k: null
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: deepseek-v4
   name: DeepSeek V4
   provider: DeepSeek
@@ -708,10 +783,15 @@ models:
   - moe
   tier: frontier
   benchmarks:
-    mmlu: null
+    mmlu: 87.5
     humaneval: null
-    math: null
-    gpqa: null
+    math: 88.0
+    gpqa: 90.1
+    sweBench: 80.6
+    gsm8k: null
+    aime: null
+    liveCodeBench: 93.5
+    hellaswag: null
 - id: glm-5-1
   name: GLM-5.1
   provider: Z.ai
@@ -757,7 +837,12 @@ models:
     mmlu: null
     humaneval: null
     math: null
-    gpqa: null
+    gpqa: 86.2
+    sweBench: 58.4
+    gsm8k: null
+    aime: 95.3
+    liveCodeBench: null
+    hellaswag: null
 - id: mimo-v2-5-pro
   name: MiMo-V2.5-Pro
   provider: Xiaomi
@@ -799,10 +884,15 @@ models:
   - coding
   tier: frontier
   benchmarks:
-    mmlu: null
+    mmlu: 86.7
     humaneval: null
-    math: null
-    gpqa: null
+    math: 75.0
+    gpqa: 54.0
+    sweBench: 57.2
+    gsm8k: 95.5
+    aime: 41.0
+    liveCodeBench: null
+    hellaswag: null
 - id: qwen3-6-plus
   name: Qwen3.6 Plus
   provider: Alibaba
@@ -849,6 +939,11 @@ models:
     humaneval: null
     math: null
     gpqa: null
+    sweBench: 78.8
+    gsm8k: null
+    aime: null
+    liveCodeBench: null
+    hellaswag: null
 - id: minimax-m2-7
   name: MiniMax M2.7
   provider: MiniMax
@@ -890,7 +985,12 @@ models:
   - moe
   tier: standard
   benchmarks:
-    mmlu: null
-    humaneval: null
+    mmlu: 89.4
+    humaneval: 93.2
     math: null
     gpqa: null
+    sweBench: 56.2
+    gsm8k: null
+    aime: null
+    liveCodeBench: null
+    hellaswag: null

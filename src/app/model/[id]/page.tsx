@@ -33,7 +33,8 @@ export async function generateMetadata({
 
   const title = `${model.name} — Specs, Pricing & Benchmarks`;
   const mmluStr = model.benchmarks?.mmlu != null ? `, MMLU ${model.benchmarks.mmlu}%` : '';
-  const description = `${model.name} by ${model.provider}: ${formatContextWindow(model.contextWindow)} context, $${model.inputPricePer1M}/1M input tokens${mmluStr}. Full specs, benchmark scores, pricing, and feature comparison.`;
+  const sweStr = model.benchmarks?.sweBench != null ? `, SWE-bench ${model.benchmarks.sweBench}%` : '';
+  const description = `${model.name} by ${model.provider}: ${formatContextWindow(model.contextWindow)} context, $${model.inputPricePer1M}/1M input tokens${mmluStr}${sweStr}. Benchmarks, pricing, features, and full specs.`;
   const url = `${SITE_URL}/model/${model.id}`;
 
   return {
@@ -426,24 +427,48 @@ export default async function ModelPage({ params }: { params: Promise<{ id: stri
                 score={model.benchmarks.mmlu}
               />
               <BenchmarkBar
+                label="GPQA Diamond"
+                description="Hard science Q&A"
+                score={model.benchmarks.gpqa}
+              />
+              <BenchmarkBar
+                label="MATH"
+                description="Math problem solving"
+                score={model.benchmarks.math}
+              />
+              <BenchmarkBar
+                label="AIME 2025"
+                description="Advanced math"
+                score={model.benchmarks.aime}
+              />
+              <BenchmarkBar
+                label="GSM8K"
+                description="Grade-school math"
+                score={model.benchmarks.gsm8k}
+              />
+              <BenchmarkBar
                 label="HumanEval"
                 description="Code generation"
                 score={model.benchmarks.humaneval}
               />
               <BenchmarkBar
-                label="MATH"
-                description="Mathematical reasoning"
-                score={model.benchmarks.math}
+                label="LiveCodeBench"
+                description="Live coding problems"
+                score={model.benchmarks.liveCodeBench}
               />
               <BenchmarkBar
-                label="GPQA Diamond"
-                description="Hard science Q&A"
-                score={model.benchmarks.gpqa}
+                label="SWE-bench Verified"
+                description="Real-world software"
+                score={model.benchmarks.sweBench}
+              />
+              <BenchmarkBar
+                label="HellaSwag"
+                description="Commonsense inference"
+                score={model.benchmarks.hellaswag}
               />
               <p className="text-xs mt-3" style={{ color: 'var(--text-faint)' }}>
-                Source: provider technical reports. N/A = not yet published.
-                Independent verification recommended — results vary across
-                benchmark versions and evaluation setups.
+                Source: provider technical reports &amp; independent evaluations.
+                N/A = not yet published for this model.
               </p>
             </Section>
           )}
