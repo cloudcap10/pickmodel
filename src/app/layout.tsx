@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter, Geist } from 'next/font/google';
 import './globals.css';
 import Nav from '@/components/Nav';
@@ -59,20 +59,11 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: TITLE,
     description: DESCRIPTION,
-    images: [
-      {
-        url: `${SITE_URL}/og.png`,
-        width: 1200,
-        height: 630,
-        alt: 'PickModel — Compare AI Models Side by Side',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: TITLE,
     description: DESCRIPTION,
-    images: [`${SITE_URL}/og.png`],
   },
   robots: {
     index: true,
@@ -85,18 +76,16 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  alternates: {
-    canonical: SITE_URL,
-  },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#0d0d0f',
+  colorScheme: 'dark',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-GB" className={cn("font-sans", geist.variable)}>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="canonical" href={SITE_URL} />
-      </head>
       <body>
         <TooltipProvider>
         <Nav />

@@ -18,7 +18,6 @@ export const metadata: Metadata = {
       'Compare the top 20 AI models by context window, API pricing, benchmark scores, and capabilities. Free and updated weekly.',
     url: SITE_URL,
     type: 'website',
-    images: [{ url: `${SITE_URL}/og.png`, width: 1200, height: 630 }],
   },
 };
 

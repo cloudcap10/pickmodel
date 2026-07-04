@@ -16,6 +16,12 @@ export const metadata: Metadata = {
     url: 'https://pickmodel.uk/benchmarks',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Model Benchmark Rankings — PickModel',
+    description:
+      'How 20 AI models rank across MMLU, GPQA, MATH, HumanEval, SWE-bench, and 4 more benchmarks.',
+  },
 };
 
 export default function BenchmarksPage() {

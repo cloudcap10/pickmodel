@@ -15,7 +15,6 @@ export const metadata: Metadata = {
       'Instantly rank 20+ AI models by your actual monthly API cost. Adjust messages/day and token counts — updates in real time.',
     url: `${SITE_URL}/calculator`,
     type: 'website',
-    images: [{ url: `${SITE_URL}/og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

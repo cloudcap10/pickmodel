@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     url: 'https://pickmodel.uk/about',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About PickModel — How We Compare AI Models',
+    description:
+      'Free, open-source AI model comparison. Community-maintained data updated weekly.',
+  },
 };
 
 export default function AboutPage() {
