@@ -507,8 +507,8 @@ models:
   contextWindow: 1048576
   maxOutput: 8192
   knowledgeCutoff: 2024-08
-  inputPricePer1M: 0.15
-  outputPricePer1M: 0.6
+  inputPricePer1M: 0.2
+  outputPricePer1M: 0.8
   consumerPlanName: null
   consumerPlanPricePerMonth: null
   openSource: true
@@ -606,8 +606,8 @@ models:
   contextWindow: 163840
   maxOutput: 8192
   knowledgeCutoff: 2024-07
-  inputPricePer1M: 0.2
-  outputPricePer1M: 0.77
+  inputPricePer1M: 0.24
+  outputPricePer1M: 0.9
   consumerPlanName: DeepSeek Chat
   consumerPlanPricePerMonth: 0
   openSource: true
@@ -652,7 +652,7 @@ models:
 
     '
   releaseDate: 2025-01
-  contextWindow: 64000
+  contextWindow: 163840
   maxOutput: 32768
   knowledgeCutoff: 2024-07
   inputPricePer1M: 0.7
@@ -806,8 +806,8 @@ models:
   contextWindow: 202752
   maxOutput: 65536
   knowledgeCutoff: 2025-06
-  inputPricePer1M: 1.05
-  outputPricePer1M: 3.5
+  inputPricePer1M: 0.966
+  outputPricePer1M: 3.036
   consumerPlanName: null
   consumerPlanPricePerMonth: null
   openSource: false
